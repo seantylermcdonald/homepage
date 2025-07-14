@@ -30,7 +30,7 @@ custom-homepage/
 │   └── script.js       # Clock + dynamic widgets
 ├── Dockerfile          # Debian + Node.js container
 └── docker-compose.yml  # One-command deployment
-
+```
 ---
 
 ## 🚀 Getting Started
