@@ -67,12 +67,12 @@ Widget settings will soon be managed via a config.js file:
 
 ## 📌 Todo & Planned Features
 
- •	🌤️ Weather widget using OpenWeatherMap API
- •	🔍 Jellyseerr inline search with request support
- •	🐳 Docker container stats
- •	📈 CPU, RAM, Disk usage
- •	⏱️ System uptime and load average
- •	🖥️ Embedded ttyd terminal
- •	🔄 Auto-refresh logic per widget
- •	🌗 Dark/light mode toggle
- •	🔐 Authentication (for public-facing dashboards)
+- [ ] 🌤️  Weather widget
+- [ ] 🔍  Jellyseerr search
+- [ ] 🐳  Docker stats panel
+- [ ] 📈  CPU, RAM, Disk monitoring
+- [ ] ⏱️  System uptime and load
+- [ ] 🖥️  Embedded ttyd terminal
+- [ ] 🔄  Auto-refresh per widget
+- [ ] 🌗  Light/dark mode toggle
+- [ ] 🔐  Basic authentication support
