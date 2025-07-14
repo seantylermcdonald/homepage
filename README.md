@@ -40,31 +40,33 @@ custom-homepage/
    git clone https://github.com/seantylermcdonald/homepage.git
    cd homepage
 
-2. **Build & Run with 
+2. **Build & Run with**
     ```
-     docker compose up -d
+    docker compose up -d
     ```
 
 
-3.	Visit your dashboard
-	•	http://localhost:8080
-
+3.	**Visit your dashboard**
+    ```
+	http://localhost:8080
+    ```
 ---
 
-🔧 Configuration (Coming Soon)
+## 🔧 Configuration (Coming Soon)
 
 Widget settings will soon be managed via a config.js file:
-
+```
  const HOMEPAGE_CONFIG = {
    weatherApiKey: "your-api-key",
    weatherLocation: "Sacramento,CA,US",
    jellyseerrUrl: "http://your-jellyseerr.local",
    jellyseerrApiKey: "your-api-key"
  };
+```
 
 
+## 📌 Todo & Planned Features
 
-📌 Todo & Planned Features
 	•	🌤️ Weather widget using OpenWeatherMap API
 	•	🔍 Jellyseerr inline search with request support
 	•	🐳 Docker container stats
