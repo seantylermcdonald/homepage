@@ -41,6 +41,9 @@ custom-homepage/
    cd homepage
 
 2. **Build & Run with 
+    ```
+     docker compose up -d
+    ```
 
 
 3.	Visit your dashboard
