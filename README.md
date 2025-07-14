@@ -4,6 +4,8 @@ A clean, self-hosted web dashboard for your homelab, powered by HTML, CSS, and J
 
 Built for extensibility, speed, and style.
 
+This is a work in progress and the code may not work at times. I'm still new and learning so bear with me
+
 ---
 
 ## ✨ Features
