@@ -1,9 +1,10 @@
 version: "3.8"
 services:
-  custom-homepage: homepage
+  custom-homepage:
     build: .
+    container_name: custom-homepage
     ports:
-      - "9000:9000"
+      - "8080:8080"
     volumes:
-      - /mnt/apollo/configs/homepage:/app
+      - ./public:/app
     restart: unless-stopped
