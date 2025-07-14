@@ -3,7 +3,7 @@ services:
   custom-homepage: homepage
     build: .
     ports:
-      - "8080:8080"
+      - "9000:9000"
     volumes:
       - /mnt/apollo/configs/homepage:/app
     restart: unless-stopped
