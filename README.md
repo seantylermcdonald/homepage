@@ -22,7 +22,7 @@ Built for extensibility, speed, and style.
 ---
 
 ## 🗂️ Project Structure
-
+```
 custom-homepage/
 ├── public/
 │   ├── index.html      # Main UI layout
