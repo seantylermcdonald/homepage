@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 # Set working directory and copy app
 WORKDIR /app
-COPY public/ /app
+COPY public/ /app/public
 
 # Expose port and run the server
 EXPOSE 8080
