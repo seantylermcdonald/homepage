@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-[#202d45] text-[#F4F7FA]">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Homepage</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>🏠 RipWave Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js" defer></script>
+  <link rel="stylesheet" href="custom.css" />
+  <script src="custom.js" defer></script>
 </head>
-<body>
-  <header class="navbar">
-    <h1>Dashboard</h1>
-    <div id="clock"></div>
+
+<body class="min-h-screen flex flex-col font-sans">
+
+  <!-- Header -->
+  <header class="w-full py-4 px-6 bg-[#202d45] border-b border-[#9FBEDC]/30 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">📀 RipWave Dashboard</h1>
+    <div class="flex items-center gap-6">
+      <div id="clock" class="text-lg font-mono"></div>
+      <div id="weather" class="text-sm opacity-75"></div>
+    </div>
   </header>
-  <main class="grid">
-    <section class="card">Weather Widget</section>
-    <section class="card">Jellyseerr Search</section>
-    <section class="card">Docker Stats</section>
-    <section class="card">System Info</section>
-    <section class="card">ttyd Terminal</section>
+
+  <!-- Sticky Nav (Toggleable) -->
+  <nav class="w-full sticky top-0 z-10 bg-[#202d45] shadow-md border-b border-[#9FBEDC]/20 py-2 px-4">
+    <div class="flex justify-between items-center">
+      <span class="font-semibold">🔧 Tools</span>
+      <button @click="showNav = !showNav" class="text-xs border px-2 py-1 rounded">Toggle</button>
+    </div>
+  </nav>
+
+  <!-- Main Panel Area -->
+  <main class="flex-1 p-6 space-y-6 max-w-7xl mx-auto">
+
+    <!-- Docker Stats -->
+    <section class="shadow-xl rounded-xl bg-[#1c253a] p-4">
+      <h2 class="text-xl font-semibold mb-2">🐳 Docker Stats</h2>
+      <div id="docker-stats">Loading...</div>
+    </section>
+
+    <!-- Now Playing -->
+    <section class="shadow-xl rounded-xl bg-[#1c253a] p-4">
+      <h2 class="text-xl font-semibold mb-2">🎵 Now Playing</h2>
+      <div id="now-playing">Loading...</div>
+    </section>
+
+    <!-- Jellyseerr Search -->
+    <section class="shadow-xl rounded-xl bg-[#1c253a] p-4">
+      <h2 class="text-xl font-semibold mb-2">🔍 Jellyseerr Search</h2>
+      <form id="jelly-search" class="flex gap-2">
+        <input type="text" name="query" class="flex-1 px-3 py-2 bg-[#202d45] border border-[#9FBEDC]/20 rounded" placeholder="Enter title..." />
+        <button class="px-4 py-2 bg-[#EC6F66] text-white rounded hover:brightness-110">Search</button>
+      </form>
+      <div id="jelly-results" class="mt-4">No results.</div>
+    </section>
+
+    <!-- Disk Space -->
+    <section class="shadow-xl rounded-xl bg-[#1c253a] p-4">
+      <h2 class="text-xl font-semibold mb-2">💾 Disk Space</h2>
+      <div id="disk-space">Loading...</div>
+    </section>
+
+    <div class="widget" id="disk-widget">
+      <h2 class="widget-title">💾 Disk Space</h2>
+       <div id="disk-info" class="space-y-2 text-sm"></div>
+    </div>
+
+
+    <!-- Service Health -->
+    <section class="shadow-xl rounded-xl bg-[#1c253a] p-4">
+      <h2 class="text-xl font-semibold mb-2">❤️ Service Health</h2>
+      <div id="service-health">Loading...</div>
+    </section>
+
   </main>
-  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer class="text-center text-xs py-4 opacity-50">
+    RipWave by Sean • Built with ❤️ and TailwindCSS
+  </footer>
+
 </body>
 </html>
